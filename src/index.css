@@ -45,3 +45,10 @@
 .category-btn:hover span {
   color: white !important;
 }
+.category-btn--active {
+  background-color: #76323f !important;
+  color: white !important;
+}
+.category-btn--active span {
+  color: white !important;
+}
