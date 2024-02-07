@@ -13,16 +13,14 @@ const Main = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const data = ApiService.fetching('search')
-        setVideos(data)
+        const data = await ApiService.fetching(`search?part=snippet&q=${selectedCategory}`)
+        setVideos(data.items)
       } catch (error) {
         console.log(error)
       }
     }
     getData()
-
-    ApiService.fetching('search').then(data => setVideos(data))
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <Stack>
@@ -33,7 +31,6 @@ const Main = () => {
             {selectedCategory} <span style={{color: colors.secondary}} >videos</span>
           </Typography>
           <Videos videos={videos} />
-          {/* {videos.items?.map(e => e.kind)} */}
         </Container>
       </Box>
     </Stack>

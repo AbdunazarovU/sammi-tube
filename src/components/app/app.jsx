@@ -1,10 +1,10 @@
-import { Routes, Route, useParams } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { Box } from "@mui/material"
 import { Channel, Main, Navbar, Search, VideoDetail } from "../"
 
 const App = () => {
-  const params = useParams()
-  console.log(params)
+  // const params = useParams()
+  // console.log(params)
 
   return (
     <Box>
