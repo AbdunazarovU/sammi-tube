@@ -16,7 +16,7 @@ const Videos = ({ videos }) => {
       gap={2}
     >
       {videos?.map(e => (
-        <Box key={e.id.videoId}>
+        <Box key={e?.id?.videoId}>
           {e.id.videoId && <VideoCard video={e} />}
           {e.id.channelId && <ChannelCard video={e} />}
         </Box>
