@@ -52,3 +52,10 @@
 .category-btn--active span {
   color: white !important;
 }
+
+
+@media screen and (max-width: 600px) {
+  .search-bar {
+    width: 200px;
+  }
+}
