@@ -1,6 +1,6 @@
 import { Checkroom, DeveloperMode, FaceRetouchingNatural, FitnessCenter, GraphicEq, Home, LiveTv, MusicNote, OndemandVideo, School, SportsEsports, TheaterComedy } from "@mui/icons-material"
 
-export const logo = "https://picsum.photos/200/300?random=1"
+export const logo = "https://cdn.worldvectorlogo.com/logos/unicon-1.svg"
 
 export const category = [
   {name: "New", icon: <Home />},

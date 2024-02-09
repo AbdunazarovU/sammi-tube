@@ -14,7 +14,7 @@ const Navbar = () => {
       sx={{position: "sticky", top: 0, zIndex: 99, backgroundColor: colors.primary }}
     >
       <Link to={"/"}>
-        <img src={logo} alt="logo rasmi" width={120} height={40} />
+        <img style={{objectFit: "cover"}} src={logo} alt="logo rasmi" width={120} height={40} />
       </Link>
       <SearchBar />
       <Box />
